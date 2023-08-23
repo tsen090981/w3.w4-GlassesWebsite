@@ -1,0 +1,32 @@
+//color
+$color_primary: #650300;
+$color_secondary: #AA0601;
+$color_secondary_light: #FBF2F2;
+$color_black: #000000;
+$color_white: #FFFFFF;
+$color_gray_light: #DEE2E6;
+$color_gray_dark: #707070;
+
+//font
+$font-family-base: 'Roboto', sans-serif;
+$font-size-base: 1rem; //16px
+$sm-font-size: $font-size-base * 0.875; //14px
+$h6-font-size: $font-size-base; //16px
+$h5-1-font-size: $font-size-base * 1.125; //18px
+$h5-font-size: $font-size-base * 1.25; //20px
+$h4-font-size: $font-size-base * 1.5; //24px
+$h3-1-font-size: $font-size-base * 2; //32px
+$h3-font-size: $font-size-base * 2.25; //36px
+$h2-1-font-size: $font-size-base * 2.625; //42px
+$h2-font-size: $font-size-base * 3; //48px
+$h1-font-size: $font-size-base * 4; //64px
+
+//margin-bottom
+$margin-bottom-base: 4px;
+$xs-margin-bottom: $margin-bottom-base; //4px
+$s-margin-bottom: $margin-bottom-base * 2; //8px
+$sm-margin-bottom: $margin-bottom-base * 4; //16px
+$m-margin-bottom: $margin-bottom-base * 6; //24px
+$ml-margin-bottom: $margin-bottom-base * 8; //32px
+$l-margin-bottom: $margin-bottom-base * 12; //48px
+$xl-margin-bottom: $margin-bottom-base * 18; //72px

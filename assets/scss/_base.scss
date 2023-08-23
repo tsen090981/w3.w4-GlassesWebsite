@@ -1,0 +1,47 @@
+// *{
+//     outline: 1px solid skyblue;
+// }
+body{
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 1336px;
+    padding: 0px 20px;
+    margin: auto;
+    @include pad(){
+        max-width: 768px;
+        padding: 0px 36px;
+    }
+    @include mobile(){
+        max-width: 100%;
+        padding: 0px 14px;
+    }
+}
+
+
+//flex
+.d-flex{
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-column{
+    flex-direction: column;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-end{
+    justify-content: end;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-around{
+    justify-content: space-around;
+}
+.align-item-center{
+    align-items: center;
+}

@@ -1,0 +1,55 @@
+.header{
+  background: $color_secondary;
+  font-size: $h5-font-size;
+  padding: 25px 0;
+  @include mobile(){
+    padding: 12px 0px 0px 0px;
+  }
+  .container{
+    position: relative;
+    @include mobile(){
+      padding: 0px;
+    }
+  }
+  .header_sm{
+    @include mobile(){
+      flex-direction: column;
+      flex-wrap: wrap
+    }
+  }
+  .logo{
+    @include align-center;
+    left: 20px;
+    width: 80px;
+    @include mobile(){
+      position: relative;
+      left: 15px;
+      top: auto;
+      transform: none;
+      margin-bottom: 16px;
+    }
+  }
+  .list{
+      gap: 0px 64px;
+      @include mobile(){
+        gap: 0px 0px;
+        flex-wrap: wrap;
+      }
+    li{
+      @include mobile(){
+        width: 50%;
+        text-align: center;
+        border: 1px solid $color_white;
+      }
+    }
+    a{
+      text-decoration: none;
+      color: $color_white;
+      @include mobile(){
+        display: inline-block;
+        padding: 12px 0px;
+        width: 100%;
+      }
+    }
+  }
+}

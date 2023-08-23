@@ -1,0 +1,90 @@
+.store_title{
+    padding: 96px 0 80px 0;
+    @include pad(){
+        padding: 80px 0;
+    }
+    @include mobile(){
+        padding: 40px 0 64px 0;
+    }
+    h2{
+        font-size: $h2-font-size;
+        font-weight: bold;
+        border-left: 8px solid $color_secondary;
+        padding-left: 16px;
+        margin-bottom: $ml-margin-bottom;
+    }
+    form{
+        margin-bottom: 40px;
+        label{
+            font-size: $h4-font-size;
+            margin-right: 16px;
+            @include mobile(){
+                margin-right: 8px;
+            }
+        }
+        select{
+            padding: 6px 238px 6px 12px;
+            border: 1px solid #CED4DA;
+            font-size: $h5-1-font-size;
+            color: #495057;
+            @include mobile(){
+                padding: 6px 0 6px 12px;
+                width: calc(100% - 104px);
+            }
+        }
+    }
+    .store_list{
+        gap: 48px 24px;
+        flex-wrap: wrap;
+        @include pad(){
+            gap: 24px 24px;
+        }
+        @include mobile(){
+            gap: 24px 0px;
+            flex-direction: column;
+        }
+        .store_list_item{
+            width: calc((100% - 48px) / 3);
+            @include pad(){
+                width: calc((100% - 24px) / 2);
+            }
+            @include mobile(){
+                width: 100%;
+            }
+        }
+        h4{
+            font-size: $h4-font-size;
+            padding: 8px 0px 8px 24px;
+            border: 1px solid #00000020;
+        }
+        .store_info{
+            height: 168px;
+            padding: 16px 24px;
+            border: 1px solid #00000020;
+            span{
+                font-size: $h4-font-size;
+                margin-right: 8px;
+                line-height: 30px;
+            }
+            p{
+                font-size: $h5-font-size;
+                display: inline-block;
+            }
+            .store_tel,.store_time{
+                margin-bottom: $margin-bottom-base;
+            }
+        }
+        .store_info_btn{
+            a{
+                display: inline-block;
+                width: 100%;
+                text-decoration: none;
+                color: $color_white;
+                background-color: $color_black;
+                padding: 16px 0px;
+                font-size: $h5-1-font-size;
+                text-align: center;
+            }
+        }
+    }
+}

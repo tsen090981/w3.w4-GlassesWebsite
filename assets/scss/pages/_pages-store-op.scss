@@ -1,0 +1,132 @@
+.classic_bn{
+    .classic_bn_op{
+        width: 50%;
+        .SM_only{
+            display: none;
+        }
+        .PC_only{
+            display: block;
+        }
+        @include mobile(){
+            .SM_only{
+                display: block;
+            }
+            .PC_only{
+                display: none;
+            }
+        }
+    }
+}
+.Celluloid_Combi{
+    text-align: center;
+    padding: 80px 0px;
+    @include mobile(){
+        padding: 40px 0px 64px 0px;
+    }
+    h2{
+        font-size: $h2-1-font-size;
+        font-weight: 500;
+    }
+    h3{
+        font-size: $h3-1-font-size;
+        margin-bottom: $ml-margin-bottom;
+        @include mobile(){
+            margin-bottom: $m-margin-bottom;
+        }
+    }
+    .pd{
+        gap: 80px 24px;
+        flex-wrap: wrap;
+        @include pad(){
+            gap: 40px 24px;
+        }
+        @include mobile(){
+            gap: 24px 0px;
+            flex-direction: column;
+        }
+        li{
+            width: calc((100% - 72px) / 4);
+            @include pad(){
+                width: calc((100% - 24px) / 2);
+            }
+            @include mobile(){
+                width: 100%;
+            }
+            a{
+                text-decoration: none;
+                font-size: $h4-font-size;
+            }
+            .num{
+                color: $color_black;
+                font-weight: normal;
+            }
+            .dollar{
+                color: $color_secondary;
+                font-weight: 500;
+            }
+            .color_list{
+                gap: 0px 8px;
+                .color{
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 4px;
+                }
+                .color1{
+                    background-color: #5F3E2D;
+                }
+                .color2{
+                    background-color: #B75929;
+                }
+            }
+            
+            
+        }
+        
+    }
+}
+.num_pages{
+    padding: 0px 0px 80px 0px;
+    @include mobile(){
+        padding: 0 0 64px 0;
+    }
+    .pages_list{
+        @include mobile(){
+            width: 100%;
+        }
+        .num_active{
+            a{
+                background-color: $color_black;
+                color: $color_white;
+                &:hover{
+                    background-color: $color_black;
+                    color: $color_white;
+                    cursor: inherit; 
+                }
+            }
+        }
+        a{
+            color: #555555;
+            border: 1px solid #555555;
+            border-left: none;
+            font-size: $h5-1-font-size;
+            text-decoration: none;
+            padding: 12px 16px;
+            background-color: $color_white;
+            transition: .5s;
+            &:hover{
+                background-color: #F2F2F2;
+            }
+            @include mobile(){
+                padding: 12px 14px;
+                font-size: $font-size-base;
+            }
+        }
+        li{
+            &:first-child{
+                a{
+                    border-left: 1px solid #555555;
+                }
+            }
+        }
+    }
+}

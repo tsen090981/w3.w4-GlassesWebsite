@@ -1,0 +1,21 @@
+@mixin title{
+    font-size: $h2-font-size;
+    font-weight: bold;
+    color: $color_primary;
+    text-align: center;
+    margin-bottom: $l-margin-bottom;
+    @include mobile(){
+        font-size: $h4-font-size;
+        margin-bottom: $m-margin-bottom;
+    }
+}
+@mixin align-center{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@mixin row-center{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
